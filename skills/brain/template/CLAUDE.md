@@ -5,7 +5,7 @@ This project uses **Brain**, an agentic AI-first development workflow manager. A
 
 ### Starting a Session
 
-- ALWAYS run `/brain-status` first to understand current progress.
+- ALWAYS run `/brain status` first to understand current progress.
 - Read `_brain/state.md` for full context on what's active and what's been completed.
 - Read the current stage spec file for detailed requirements before writing any code.
 
@@ -30,15 +30,15 @@ Issues have two forms: **inbox items** (quick notes in `_brain/issues.md`) and *
 
 | Command | Description |
 |---|---|
-| `/brain-init` | Scaffold the `_brain/` folder structure |
-| `/brain-status` | Show current milestone, stage, and issue counts |
-| `/brain-milestone-new <name>` | Create a new milestone |
-| `/brain-milestone-list` | List all milestones and stages |
-| `/brain-stage-new <name>` | Create a stage in the current milestone |
-| `/brain-stage-done` | Mark current stage complete, advance |
-| `/brain-issue-add <msg>` | Add a quick issue to the inbox |
-| `/brain-issue-research <issue>` | Research an inbox item into a full issue |
-| `/brain-issue-stage <id(s)>` | Create a fix stage for researched issue(s) |
+| `/brain init` | Scaffold the `_brain/` folder structure |
+| `/brain status` | Show current milestone, stage, and issue counts |
+| `/brain milestone-new <name>` | Create a new milestone |
+| `/brain milestone-list` | List all milestones and stages |
+| `/brain stage-new <name>` | Create a stage in the current milestone |
+| `/brain stage-done` | Mark current stage complete, advance |
+| `/brain issue-add <msg>` | Add a quick issue to the inbox |
+| `/brain issue-research <issue>` | Research an inbox item into a full issue |
+| `/brain issue-stage <id(s)>` | Create a fix stage for researched issue(s) |
 
 ### Rules
 

@@ -4,3 +4,7 @@ Thumbs.db
 
 # Claude Code local settings
 .claude/settings.local.json
+
+# Project-specific files
+node_modules/
+archived/

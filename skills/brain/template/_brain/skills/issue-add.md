@@ -15,4 +15,4 @@ Add a quick issue note to the inbox. Description: $ARGUMENTS
 
 3. Confirm: "Added to inbox: {description}"
 
-This is meant for quick notes. Use `/brain-issue-research` to promote an inbox item to a full researched issue.
+This is meant for quick notes. Use `/brain issue-research` to promote an inbox item to a full researched issue.
