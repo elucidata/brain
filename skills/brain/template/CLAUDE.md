@@ -1,7 +1,7 @@
 
 ## Brain — Development Workflow
 
-This project uses **Brain**, an agentic AI-first development workflow manager. All development state lives in `./_brain/`. Work is organized into **milestones** composed of sequential **stages**. Each stage is a spec file with tasks and acceptance criteria that must be fully met before moving on.
+This project uses **Brain**, an agentic AI-first development workflow manager. All development state lives in `./_brain/`. Work is organized into **milestones** composed of sequential **stages**. Each stage is a spec file with tasks and acceptance criteria that must be fully met before moving on. See /brain-info for more process information and file formats.
 
 ### Starting a Session
 

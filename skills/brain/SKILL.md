@@ -7,6 +7,12 @@ description: Agentic AI-first development workflow manager. Use this skill whene
 
 You are the dispatcher for the **Brain** development workflow system. All development state lives in `./_brain/`.
 
+## Path Resolution
+
+- `<SKILL_DIR>` refers to the directory containing this SKILL.md file (the installed skill location).
+- All commands except `init` resolve skill files relative to the project root (`./_brain/skills/`).
+- If `./_brain/` does not exist and the subcommand is not `init`, inform the user they need to run `/brain init` first.
+
 ## Routing
 
 Parse the subcommand and any arguments from the user's input after `/brain`.
@@ -30,17 +36,17 @@ These resolve instantly with no ambiguity:
 
 If the input doesn't match an alias exactly, match it to the closest command below using intent and partial matching (e.g., "stat" → "status", "mile list" → "milestone-list").
 
-| Subcommand     | Skill File                         | Description                                     |
-| -------------- | ---------------------------------- | ----------------------------------------------- |
-| init           | ./\_brain/skills/init.md           | Scaffold the `_brain/` folder structure         |
-| status         | ./\_brain/skills/status.md         | Show current milestone, stage, and issue counts |
-| milestone-new  | ./\_brain/skills/milestone-new.md  | Create a new milestone                          |
-| milestone-list | ./\_brain/skills/milestone-list.md | List all milestones and stages                  |
-| stage-new      | ./\_brain/skills/stage-new.md      | Create a stage in the current milestone         |
-| stage-done     | ./\_brain/skills/stage-done.md     | Mark current stage complete and advance         |
-| issue-add      | ./\_brain/skills/issue-add.md      | Add a quick issue to the inbox                  |
-| issue-research | ./\_brain/skills/issue-research.md | Research an inbox item into a full issue        |
-| issue-stage    | ./\_brain/skills/issue-stage.md    | Create a fix stage for researched issue(s)      |
+| Subcommand     | Skill File                          | Description                                     |
+| -------------- | ----------------------------------- | ----------------------------------------------- |
+| init           | `<SKILL_DIR>/skills/init.md`        | Scaffold the `_brain/` folder structure         |
+| status         | `./_brain/skills/status.md`         | Show current milestone, stage, and issue counts |
+| milestone-new  | `./_brain/skills/milestone-new.md`  | Create a new milestone                          |
+| milestone-list | `./_brain/skills/milestone-list.md` | List all milestones and stages                  |
+| stage-new      | `./_brain/skills/stage-new.md`      | Create a stage in the current milestone         |
+| stage-done     | `./_brain/skills/stage-done.md`     | Mark current stage complete and advance         |
+| issue-add      | `./_brain/skills/issue-add.md`      | Add a quick issue to the inbox                  |
+| issue-research | `./_brain/skills/issue-research.md` | Research an inbox item into a full issue        |
+| issue-stage    | `./_brain/skills/issue-stage.md`    | Create a fix stage for researched issue(s)      |
 
 ### Dispatch Rules
 
