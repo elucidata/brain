@@ -7,13 +7,25 @@ copying or manual syncing.
 
 ## Steps
 
-1.  Create the global skills directory if it doesn't exist: `mkdir -p ~/.claude/skills`
+1.  Create the global skills directory if it doesn't exist:
+
+```bash
+  mkdir -p ~/.claude/skills
+```
+
 2.  Symlink both skill directories: 
-  - `ln -s /Users/mattm/Projects/Elucidata/brain-cli/skills/brain ~/.claude/skills/brain`
-  - `ln -s /Users/mattm/Projects/Elucidata/brain-cli/skills/brain-info ~/.claude/skills/brain-info`
+
+```bash
+  ln -s /Users/mattm/Projects/Elucidata/brain-cli/skills/brain ~/.claude/skills/brain
+  ln -s /Users/mattm/Projects/Elucidata/brain-cli/skills/brain-info ~/.claude/skills/brain-info
+```
+
 3.  Verify the links resolve correctly:
-  - `ls -la ~/.claude/skills/`
-  - `cat ~/.claude/skills/brain/SKILL.md | head -5`
+
+```bash
+  ls -la ~/.claude/skills/
+  cat ~/.claude/skills/brain/SKILL.md | head -5
+```
 
 ## Testing
 
