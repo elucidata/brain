@@ -22,7 +22,7 @@ Research an issue from the inbox and create a full issue file. The user specifie
    - List all affected files
    - Determine a suggested fix approach
 
-5. Create `_brain/issues/{id}_{slug}.md` using the researched issue template from brain-file-formats skill. Fill in:
+5. Create `_brain/issues/{id}_{slug}.md` using the template at `_brain/templates/issue.md`. Fill in:
    - Frontmatter with the issue number, status `RESEARCHED`, and today's date
    - **Original Report** — the inbox description as-is
    - **Research Findings** — root cause, affected files, suggested approach (from your analysis)

@@ -19,7 +19,7 @@ Create a stage in the current milestone to fix one or more researched issues. Is
 
 3. Find the current milestone directory and determine the next stage ID.
 
-4. Create a fix stage file using the fix stage template from brain-file-formats skill:
+4. Create a fix stage file using the template at `_brain/templates/fix-stage.md`:
    - Reference all related issues
    - Set the objective based on the issue findings
    - Pre-fill tasks based on the suggested approaches from the issue files

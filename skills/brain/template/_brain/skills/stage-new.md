@@ -14,11 +14,11 @@ Create a new stage spec in the current milestone. The user provides a name: $ARG
 
 2. Find the current milestone's directory in `_brain/milestones/`.
 
-3. Scan existing stage files in that directory. Determine the next stage ID: `{milestone_id}-{next_stage_number}`, zero-padded to 3 digits.
+3. Scan existing stage files in that directory. Determine the next stage ID: `{next_stage_number}`, zero-padded to 3 digits.
 
 4. Slugify the name.
 
-5. Create the stage file at `_brain/milestones/{milestone_dir}/{stage_id}_{slug}.md` using the stage spec template from brain-file-formats skill. Leave Objective, Tasks, and Acceptance Criteria with placeholder dashes for the user to fill in.
+5. Create the stage file at `_brain/milestones/{milestone_dir}/{stage_id}_{slug}.md` using the template at `_brain/templates/stage.md`. Leave Objective, Tasks, and Acceptance Criteria with placeholder dashes for the user to fill in.
 
 6. If `current_stage` in state.md is null, update state.md to set this as the current stage.
 

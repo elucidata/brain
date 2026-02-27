@@ -20,9 +20,9 @@ List all milestones and their stages. Do NOT modify any files.
 
 ```
 001 milestone name ◀ current
-  001-001 stage one ✓
-  001-002 stage two ◀ active
-  001-003 stage three
+  001 stage one ✓
+  002 stage two ◀ active
+  003 stage three
 
 002 future milestone
   (no stages yet)

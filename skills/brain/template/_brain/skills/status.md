@@ -24,7 +24,7 @@ Read the current state of the Brain and report a summary. Do NOT modify any file
 🧠 Brain Status
 
   Milestone: 001 — milestone name
-  Stage:     001-003 — stage name
+  Stage:     003 — stage name
   Progress:  3 of 7 stages
 
   Inbox:      3 issue(s)
