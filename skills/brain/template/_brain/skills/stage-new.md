@@ -14,7 +14,7 @@ Create a new stage spec in the current milestone. The user provides a name: $ARG
 
 2. Find the current milestone's directory in `_brain/milestones/`.
 
-3. Scan existing stage files in that directory. Determine the next stage ID: `{next_stage_number}`, zero-padded to 3 digits.
+3. Scan existing stage files in that directory, skipping files starting with `_` (e.g., `_milestone-goals.md`). Determine the next stage ID: `{next_stage_number}`, zero-padded to 3 digits.
 
 4. Slugify the name.
 

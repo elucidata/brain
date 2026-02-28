@@ -17,10 +17,8 @@ Create a new milestone. The user provides a name: $ARGUMENTS
 
 4. Create directory: `_brain/milestones/{id}_{slug}/`
 
-5. Create initial stage: `_brain/milestones/{id}_{slug}/001_requirements.md` using the template at `_brain/templates/milestone-requirements.md`
+5. Create goals doc: `_brain/milestones/{id}_{slug}/_milestone-goals.md` using the template at `_brain/templates/milestone-goals.md`
 
-6. If `current_milestone` in state.md is null, update state.md to set this as the current milestone.
+6. If `current_milestone` in state.md is null, update state.md to set this as the current milestone. Do NOT set `current_stage` — the goals doc is not a stage.
 
-7. If `current_stage` in state.md is null, update state.md to set this to the new milestone's initial stage (requirements).
-
-8. Report the milestone ID and path, and suggest creating stages with `/brain stage-new`.
+7. Report the milestone ID and path, and suggest creating stages with `/brain stage-new`.

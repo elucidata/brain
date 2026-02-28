@@ -13,7 +13,7 @@ Mark the current stage as done and advance to the next one.
 
 2. Record the completed stage ID.
 
-3. Find the milestone directory and list all stage files sorted by ID.
+3. Find the milestone directory and list all stage files sorted by ID, skipping files starting with `_` (e.g., `_milestone-goals.md`).
 
 4. Find the current stage's position in the list.
 

@@ -12,7 +12,7 @@ List all milestones and their stages. Do NOT modify any files.
 
 2. List all directories in `_brain/milestones/`, sorted by ID.
 
-3. For each milestone, list its stage files (sorted by ID).
+3. For each milestone, list its stage files (sorted by ID), skipping `_`-prefixed files (e.g., `_milestone-goals.md`). Note if a goals doc exists.
 
 4. Mark the current milestone and current stage with an indicator.
 

@@ -20,9 +20,9 @@ Flesh out a stage spec with scope, files, detailed requirements, and acceptance 
    - Read the full stage file contents.
 
 3. **Read related context.**
-   - If the stage body references another file (e.g., "see `001_requirements.md`", "detailed requirements in …"), read that file too.
+   - Read the milestone's `_milestone-goals.md` if one exists in the milestone directory.
+   - If the stage body references another file, read that file too.
    - Read any `_brain/rules/*.md` files relevant to the stage's domain (e.g., if the stage involves UI, read `design.md`; if it involves data, read `architecture.md`).
-   - Read the milestone's requirements doc if one exists in the milestone directory.
 
 4. **Assess completeness.**
    - Check whether the stage already has substantive content (more than placeholders) in these sections: **Scope**, **Detailed Requirements**, **Acceptance Criteria**.
