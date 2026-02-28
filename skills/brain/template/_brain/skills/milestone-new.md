@@ -23,4 +23,4 @@ Create a new milestone. The user provides a name: $ARGUMENTS
 
 7. If `current_stage` in state.md is null, update state.md to set this to the new milestone's initial stage (requirements).
 
-7. Report the milestone ID and path, and suggest creating stages with `/brain stage-new`.
+8. Report the milestone ID and path, and suggest creating stages with `/brain stage-new`.
