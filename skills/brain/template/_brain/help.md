@@ -16,9 +16,7 @@ This project uses a milestone/stage development workflow managed through markdow
 ```
 _brain/
   state.md                              # Current milestone/stage pointer + completed log
-  issues.md                             # Issue inbox + index of researched issues
-  issues/
-    NNN_slug.md                         # Researched issue files
+  issues.md                             # Issue inbox
   milestones/
     NNN_name/                           # e.g. 001_initial-development
       NNN_slug.md                        # {stage_id}_{slug} e.g. 002_database-schema.md
@@ -35,14 +33,13 @@ _brain/
 - **Frontmatter values:** milestone references use the full directory name (e.g. `001_initial-development`), stage references use the stage ID only (e.g. `002`)
 
 ## Issue Lifecycle
-Issues have two forms:
-1. **Inbox items** — quick one-line notes in `_brain/issues.md` under `## Inbox`
-2. **Researched issues** — full files in `_brain/issues/NNN_slug.md` with root cause analysis, affected files, and suggested approach
+Issues are one-line notes in `_brain/issues.md` under `## Inbox`.
 
-Flow: Inbox → Research → Researched file created → Optionally staged as a fix stage → Fixed
+Flow: Inbox → Staged as fix stage → Fixed
 
 ## Stage Lifecycle
 1. Stage spec is created with objective, tasks, and acceptance criteria
+   - Stages with non-empty `fixes:` frontmatter also address tracked issues from `issues.md`
 2. Work is done to fulfill the tasks
 3. ALL acceptance criteria are verified
 4. Stage is marked done — pointer advances to next stage
