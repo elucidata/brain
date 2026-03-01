@@ -1,3 +1,6 @@
+---
+next_id: 1
+---
 # Issues
 
 ## Inbox

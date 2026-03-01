@@ -11,10 +11,12 @@ Add a quick issue note to the inbox. Description: $ARGUMENTS
 
 1. Read `_brain/issues.md`.
 
-2. Determine the next issue ID by scanning the doc for highest ID and incrementing it.
+2. Read `next_id` from the YAML frontmatter and zero-pad it to 3 digits for the issue ID.
 
 3. Append `- {issue_id}: {description}` to the `## Inbox` section, before the next `##` header.
 
-3. Confirm: "Added to inbox: {description}"
+4. Increment `next_id` in the YAML frontmatter.
+
+5. Confirm: "Added to inbox: {description}"
 
 This is meant for quick notes. Use `/brain issue-stage` to promote into a fix stage.
