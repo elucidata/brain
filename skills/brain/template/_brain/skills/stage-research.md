@@ -55,6 +55,7 @@ Flesh out a stage spec with scope, files, detailed requirements, and acceptance 
      - **Interfaces & Contracts** — Exports and Imports with TypeScript signatures
      - **Detailed Requirements** — Numbered sections with route paths, logic, UI details
      - **Acceptance Criteria** — Checkboxes, each verifiable
+     - If `fixes` frontmatter is non-empty, ensure acceptance criteria cover verifying each fix and the Tests table includes regression tests for the issues
      - **Tests** — Test file table with type and coverage description
    - Preserve any existing content that is already good — integrate it, don't discard it.
    - Keep the same stage number and title from the original file.

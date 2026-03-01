@@ -64,6 +64,14 @@ def main():
             else:
                 skipped.append("_brain/" + rel_file)
 
+    # Remove .gitkeep files that are only needed in the template repo
+    gitkeep = os.path.join(brain_dir, "milestones", ".gitkeep")
+    if os.path.exists(gitkeep):
+        os.remove(gitkeep)
+        gitkeep_rel = "_brain/milestones/.gitkeep"
+        created = [f for f in created if f != gitkeep_rel]
+        updated = [f for f in updated if f != gitkeep_rel]
+
     # Handle CLAUDE.md with markers
     begin_marker = "<!-- BEGIN BRAIN -->"
     end_marker = "<!-- END BRAIN -->"

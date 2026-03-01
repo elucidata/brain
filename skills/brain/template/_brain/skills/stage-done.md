@@ -26,11 +26,13 @@ Mark the current stage as done and advance to the next one.
   - For each item, if it's a task item ("- [ ]") and it's passed the criteria check mark it as completed ("- [x]")
   - If any acceptance criteria are unmet, stop and report that there's work still pending.
 
-8. If there is a next stage file after the current one:
+8. If the stage includes issues fixes (`fixes` in metadata), be sure and update the `_brain/issues.md`. 
+
+9. If there is a next stage file after the current one:
   - Update `current_stage` in state.md frontmatter to the next stage ID.
   - Update the Active section body to reflect the new stage.
   - Report completion and the next stage.
 
-9. If there are no more stages in this milestone:
+10. If there are no more stages in this milestone:
   - Set `current_stage` to null.
   - Report that the milestone has no more stages. Suggest creating a new milestone or adding more stages.

@@ -28,7 +28,6 @@ These resolve instantly with no ambiguity:
 | sn    | stage-new      |
 | sr    | stage-research |
 | ia    | issue-add      |
-| ir    | issue-research |
 | is    | issue-stage    |
 | mn    | milestone-new  |
 | ml    | milestone-list |
@@ -47,7 +46,6 @@ If the input doesn't match an alias exactly, match it to the closest command bel
 | stage-research | `./_brain/skills/stage-research.md` | Research a stage into a spec file               |
 | stage-done     | `./_brain/skills/stage-done.md`     | Mark current stage complete and advance         |
 | issue-add      | `./_brain/skills/issue-add.md`      | Add a quick issue to the inbox                  |
-| issue-research | `./_brain/skills/issue-research.md` | Research an inbox item into a full issue        |
 | issue-stage    | `./_brain/skills/issue-stage.md`    | Create a fix stage for researched issue(s)      |
 
 ### Dispatch Rules

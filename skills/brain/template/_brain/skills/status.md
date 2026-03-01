@@ -14,11 +14,8 @@ Read the current state of the Brain and report a summary. Do NOT modify any file
 
 3. Read `_brain/issues.md` and count:
    - Inbox items (lines under `## Inbox` starting with `- ` that are NOT links)
-   - Researched items (lines under `## Researched`)
 
-4. Count files in `_brain/issues/` for total researched issue files.
-
-5. Report in this format:
+4. Report in this format:
 
 ```
 🧠 Brain Status
@@ -27,6 +24,5 @@ Read the current state of the Brain and report a summary. Do NOT modify any file
   Stage:     003 — stage name
   Progress:  3 of 7 stages
 
-  Inbox:      3 issue(s)
-  Researched: 2 issue(s)
+  Inbox: 3 issue(s)
 ```

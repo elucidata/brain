@@ -11,8 +11,10 @@ Add a quick issue note to the inbox. Description: $ARGUMENTS
 
 1. Read `_brain/issues.md`.
 
-2. Append `- {description}` to the `## Inbox` section, before the next `##` header.
+2. Determine the next issue ID by scanning the doc for highest ID and incrementing it.
+
+3. Append `- {issue_id}: {description}` to the `## Inbox` section, before the next `##` header.
 
 3. Confirm: "Added to inbox: {description}"
 
-This is meant for quick notes. Use `/brain issue-research` to promote an inbox item to a full researched issue.
+This is meant for quick notes. Use `/brain issue-stage` to promote into a fix stage.

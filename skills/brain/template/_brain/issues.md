@@ -2,6 +2,6 @@
 
 ## Inbox
 
-## Researched
+## Deferred
 
 ## Won't Fix / By Design

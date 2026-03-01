@@ -8,3 +8,6 @@ current_stage: null
 No active milestone. Create one to get started.
 
 ## Completed Stages
+
+## Important Implementation Notes
+<!-- For future stages -->
