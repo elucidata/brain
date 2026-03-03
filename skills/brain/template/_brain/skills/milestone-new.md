@@ -21,4 +21,6 @@ Create a new milestone. The user provides a name: $ARGUMENTS
 
 6. If `current_milestone` in state.md is null, update state.md to set this as the current milestone. Do NOT set `current_stage` — the goals doc is not a stage.
 
-7. Report the milestone ID and path, and suggest creating stages with `/brain stage-new`.
+7. If had been a previous milestone, update its _milestone-goals.md with `status: done`
+
+8. Report the milestone ID and path, and suggest creating stages with `/brain stage-new`.

@@ -9,7 +9,8 @@ Mark the current stage as done and advance to the next one.
 ## Steps
 
 1. Read `_brain/state.md` for current milestone and stage.
-   - If no active stage, stop and report there's nothing to complete.
+   - If no active stage, check the newest stage of the current milestone, if it's status is pending then use that stage as the active stage.
+   - If still no active stage, stop and report there's nothing to complete.
 
 2. Record the completed stage ID.
 

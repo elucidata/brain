@@ -41,6 +41,7 @@ Code the requirements in a stage spec to completion. Optional stage ID: $ARGUMEN
    - Work through each requirement section from the spec, writing code.
    - Follow existing codebase patterns and conventions.
    - If per-task commits were chosen in step 5, commit after completing each section.
+   - Do NOT mark the stage as done, nor remove it as current_stage from state.md.
 
 8. **Verify.**
    - Run `pnpm check` and fix any issues.
