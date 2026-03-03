@@ -21,32 +21,34 @@ Parse the subcommand and any arguments from the user's input after `/brain`.
 
 These resolve instantly with no ambiguity:
 
-| Alias | Resolves to    |
-| ----- | -------------- |
-| s     | status         |
-| sd    | stage-done     |
-| sn    | stage-new      |
-| sr    | stage-research |
-| ia    | issue-add      |
-| is    | issue-stage    |
-| mn    | milestone-new  |
-| ml    | milestone-list |
+| Alias | Resolves to     |
+| ----- | --------------- |
+| s     | status          |
+| sd    | stage-done      |
+| si    | stage-implement |
+| sn    | stage-new       |
+| sr    | stage-research  |
+| ia    | issue-add       |
+| is    | issue-stage     |
+| mn    | milestone-new   |
+| ml    | milestone-list  |
 
 ### Command Table
 
 If the input doesn't match an alias exactly, match it to the closest command below using intent and partial matching (e.g., "stat" → "status", "mile list" → "milestone-list").
 
-| Subcommand     | Skill File                          | Description                                     |
-| -------------- | ----------------------------------- | ----------------------------------------------- |
-| init           | `<SKILL_DIR>/skills/init.md`        | Scaffold the `_brain/` folder structure         |
-| status         | `./_brain/skills/status.md`         | Show current milestone, stage, and issue counts |
-| milestone-new  | `./_brain/skills/milestone-new.md`  | Create a new milestone                          |
-| milestone-list | `./_brain/skills/milestone-list.md` | List all milestones and stages                  |
-| stage-new      | `./_brain/skills/stage-new.md`      | Create a stage in the current milestone         |
-| stage-research | `./_brain/skills/stage-research.md` | Research a stage into a spec file               |
-| stage-done     | `./_brain/skills/stage-done.md`     | Mark current stage complete and advance         |
-| issue-add      | `./_brain/skills/issue-add.md`      | Add a quick issue to the inbox                  |
-| issue-stage    | `./_brain/skills/issue-stage.md`    | Create a fix stage for researched issue(s)      |
+| Subcommand      | Skill File                           | Description                                     |
+| --------------- | ------------------------------------ | ----------------------------------------------- |
+| init            | `<SKILL_DIR>/skills/init.md`         | Scaffold the `_brain/` folder structure         |
+| status          | `./_brain/skills/status.md`          | Show current milestone, stage, and issue counts |
+| milestone-new   | `./_brain/skills/milestone-new.md`   | Create a new milestone                          |
+| milestone-list  | `./_brain/skills/milestone-list.md`  | List all milestones and stages                  |
+| stage-new       | `./_brain/skills/stage-new.md`       | Create a stage in the current milestone         |
+| stage-done      | `./_brain/skills/stage-done.md`      | Mark current stage complete and advance         |
+| stage-implement | `./_brain/skills/stage-implement.md` | Implement a stage                               |
+| stage-research  | `./_brain/skills/stage-research.md`  | Research a stage into a spec file               |
+| issue-add       | `./_brain/skills/issue-add.md`       | Add a quick issue to the inbox                  |
+| issue-stage     | `./_brain/skills/issue-stage.md`     | Create a fix stage for researched issue(s)      |
 
 ### Dispatch Rules
 
