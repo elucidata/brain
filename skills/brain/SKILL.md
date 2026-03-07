@@ -31,7 +31,8 @@ These resolve instantly with no ambiguity:
 | ia    | issue-add       |
 | is    | issue-stage     |
 | mn    | milestone-new   |
-| ml    | milestone-list  |
+| ml    | milestone-list     |
+| mr    | milestone-research |
 
 ### Command Table
 
@@ -42,7 +43,8 @@ If the input doesn't match an alias exactly, match it to the closest command bel
 | init            | `<SKILL_DIR>/skills/init.md`         | Scaffold the `_brain/` folder structure         |
 | status          | `./_brain/skills/status.md`          | Show current milestone, stage, and issue counts |
 | milestone-new   | `./_brain/skills/milestone-new.md`   | Create a new milestone                          |
-| milestone-list  | `./_brain/skills/milestone-list.md`  | List all milestones and stages                  |
+| milestone-list     | `./_brain/skills/milestone-list.md`     | List all milestones and stages                     |
+| milestone-research | `./_brain/skills/milestone-research.md` | Research a milestone into a goals spec             |
 | stage-new       | `./_brain/skills/stage-new.md`       | Create a stage in the current milestone         |
 | stage-done      | `./_brain/skills/stage-done.md`      | Mark current stage complete and advance         |
 | stage-implement | `./_brain/skills/stage-implement.md` | Implement a stage                               |
