@@ -1,8 +1,8 @@
 # Testing/Dev
 
-The Brain skills live in `skills/brain/` and `skills/brain-info/` in this
-repo. To test them with Claude Code, they need to be discoverable at
-`~/.claude/skills/`. Symlinks let you test the live repo versions without
+The Brain skill lives in `skills/brain/` in this
+repo. To test with Claude Code, it needs to be discoverable at
+`~/.claude/skills/`. Symlinks let you test the live repo version without
 copying or manual syncing.
 
 ## Steps
@@ -13,14 +13,13 @@ copying or manual syncing.
   mkdir -p ~/.claude/skills
 ```
 
-2.  Symlink both skill directories: 
+2.  Symlink the skill directory: 
 
 ```bash
   ln -s /Users/mattm/Projects/Elucidata/brain-cli/skills/brain ~/.claude/skills/brain
-  ln -s /Users/mattm/Projects/Elucidata/brain-cli/skills/brain-info ~/.claude/skills/brain-info
 ```
 
-3.  Verify the links resolve correctly:
+3.  Verify the link resolved correctly:
 
 ```bash
   ls -la ~/.claude/skills/
