@@ -101,8 +101,8 @@ _brain/
 │   └── ...
 ├── milestones/           # Milestone directories
 │   └── 001_my-feature/
-│       ├── 001-001_setup.md
-│       └── 001-002_tests.md
+│       ├── 001_setup.md
+│       └── 002_tests.md
 ├── templates/            # Templates for milestones, stages, issues
 └── rules/                # Project-specific conventions
 ```

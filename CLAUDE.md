@@ -18,7 +18,7 @@ Each `SKILL.md` has YAML frontmatter (`description`, `argument-hint`) and a numb
 
 ## Key Conventions
 
-- **IDs are zero-padded**: Milestones use 3-digit IDs (`001`, `002`), stages use composite IDs (`001-001`, `001-002`), issues use 3-digit IDs
+- **IDs are zero-padded**: Milestones, Stages and Issues use 3-digit IDs (`001`, `002`)
 - **Slugified names**: IDs are paired with slugs (`001_setup-auth`) — lowercase, hyphens, no special characters
 - **YAML frontmatter**: All `_brain/` markdown files use YAML frontmatter for metadata (status, IDs, dates)
 - **Sequential stages**: Stages within a milestone must be completed in order
